@@ -34,20 +34,43 @@ class App extends Component {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#626567',
+      selectedColor: '#2A8CE5',
+      backgroundColor: '#FBFBFB',
+      borderStyle: 'white',
+      list: [{
+        pagePath: 'pages/index/index',
+        text: '',
+        iconPath: './asset/images/tab_instagram.png',
+        selectedIconPath: './asset/images/tab_instagram_selected.png'
+      }, {
+        pagePath: 'pages/index/index',
+        text: '',
+        iconPath: './asset/images/tab_add.png',
+        selectedIconPath: './asset/images/tab_add_selected.png'
+      },
+      {
+        pagePath: 'pages/index/index',
+        text: '',
+        iconPath: './asset/images/tab_mine.png',
+        selectedIconPath: './asset/images/tab_mine_selected.png'
+      }]
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() { }
 
-  componentDidShow () {}
+  componentDidShow() { }
 
-  componentDidHide () {}
+  componentDidHide() { }
 
-  componentDidCatchError () {}
+  componentDidCatchError() { }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Provider store={store}>
         <Index />

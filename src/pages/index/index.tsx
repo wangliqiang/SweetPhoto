@@ -2,6 +2,8 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
+import TabBar from '../../components/tabbar/tabBar'
+
 import './index.scss'
 
 type PageStateProps = {
@@ -69,6 +71,7 @@ class Index extends Component {
         <Button onClick={this.decrement}>-</Button>
         <Button onClick={this.incrementAsync}>Add Async</Button>
         <Text>{counter}</Text>
+        {/* <TabBar/> */}
       </View>
     )
   }
