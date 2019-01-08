@@ -27,6 +27,7 @@ class App extends Component {
    */
   config: Config = {
     pages: [
+      'pages/photo/index',
       'pages/index/index'
     ],
     window: {
@@ -41,7 +42,7 @@ class App extends Component {
       backgroundColor: '#FBFBFB',
       borderStyle: 'white',
       list: [{
-        pagePath: 'pages/index/index',
+        pagePath: 'pages/photo/index',
         text: '',
         iconPath: './asset/images/tab_instagram.png',
         selectedIconPath: './asset/images/tab_instagram_selected.png'
